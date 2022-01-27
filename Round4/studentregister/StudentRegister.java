@@ -10,7 +10,7 @@ public class StudentRegister
 
     public List<Student> getStudents()
     {
-        return this.studends.values().stream().toList();
+        return this.studends.values().stream().sorted(Comparator.comparing(Student::getName)).toList();
     }
 
     public void addStudent(Student student)
@@ -25,7 +25,7 @@ public class StudentRegister
 
     public List<Course> getCourses()
     {
-        return this.courses.values().stream().toList();
+        return this.courses.values().stream().sorted(Comparator.comparing(Course::getName)).toList();
     }
 
     public void addAttainment(Attainment attainment)

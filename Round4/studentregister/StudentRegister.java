@@ -1,3 +1,4 @@
+import javax.swing.plaf.ColorUIResource;
 import java.util.*;
 
 public class StudentRegister
@@ -50,7 +51,7 @@ public class StudentRegister
                                                                                                    a.getCourseCode().compareTo(b.getCourseCode())
                                                                                                    :
                                                                                                    courses.get(a.getCourseCode()).getName().compareTo(courses.get(b.getCourseCode()).getName())).toList();
-            sortedAttainments.forEach(x -> System.out.format("  %s: %d%n", x.getCourseCode(), x.getGrade()));
+            sortedAttainments.forEach(x -> System.out.format("  %s %s: %d%n", x.getCourseCode(), courses.get(x.getCourseCode()).getName(), x.getGrade()));
         }
     }
 
@@ -62,7 +63,7 @@ public class StudentRegister
         {
             var student = studends.get(studentNumber);
             System.out.format("%s (%s):%n", student.getName(), student.getStudentNumber());
-            attainments.get(studentNumber).forEach(x -> System.out.format("  %s: %d%n", x.getCourseCode(), x.getGrade()));
+            attainments.get(studentNumber).forEach(x -> System.out.format("  %s %s: %d%n", x.getCourseCode(), courses.get(x.getCourseCode()).getName(), x.getGrade()));
         }
     }
 }

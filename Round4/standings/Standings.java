@@ -68,7 +68,7 @@ public class Standings
         readMatchData(fileName);
     }
 
-    public Standings() { }
+    public Standings() {}
 
     public void readMatchData(String fileName) throws IOException
     {
@@ -101,16 +101,22 @@ public class Standings
 
     public void addMatchResult(String teamNameA, int goalsA, int goalsB, String teamNameB)
     {
-        var teamA = teams.stream().filter(x -> x.getName().equals(teamNameA)).findFirst().orElseGet(() -> {
-            var team = new Team(teamNameA);
-            teams.add(team);
-            return team;
-        });
-        var teamB = teams.stream().filter(x -> x.getName().equals(teamNameB)).findFirst().orElseGet(() -> {
-            var team = new Team(teamNameB);
-            teams.add(team);
-            return team;
-        });
+        var teamA = teams.stream()
+                .filter(x -> x.getName().equals(teamNameA))
+                .findFirst()
+                .orElseGet(() -> {
+                    var team = new Team(teamNameA);
+                    teams.add(team);
+                    return team;
+                });
+        var teamB = teams.stream()
+                .filter(x -> x.getName().equals(teamNameB))
+                .findFirst()
+                .orElseGet(() -> {
+                    var team = new Team(teamNameB);
+                    teams.add(team);
+                    return team;
+                });
 
         teamA.playedGames++;
         teamB.playedGames++;
@@ -144,9 +150,10 @@ public class Standings
 
     public List<Team> getTeams()
     {
-        return teams.stream().sorted(Comparator.comparing(Team::getPoints).reversed()
-                                             .thenComparing((a, b) -> (b.getScored() - b.getAllowed()) - (a.getScored() - a.getAllowed()))
-                                             .thenComparing((a, b) -> b.getScored() - a.getScored())
-                                             .thenComparing(Team::getName)).toList();
+        return teams.stream()
+                .sorted(Comparator.comparing(Team::getPoints).reversed()
+                                .thenComparing((a, b) -> (b.getScored() - b.getAllowed()) - (a.getScored() - a.getAllowed()))
+                                .thenComparing((a, b) -> b.getScored() - a.getScored())
+                                .thenComparing(Team::getName)).toList();
     }
 }

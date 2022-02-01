@@ -5,7 +5,7 @@ public class Date
         return (year % 4 == 0) && ((year % 100 != 0) || (year % 400 == 0));
     }
 
-    static int[][] mDays = {{31, 31}, {28, 29}, {31, 31}, {30, 30}, {31, 31}, {30, 30},
+    private static int[][] mDays = {{31, 31}, {28, 29}, {31, 31}, {30, 30}, {31, 31}, {30, 30},
             {31, 31}, {31, 31}, {30, 30}, {31, 31}, {30, 30}, {31, 31}};
 
     static int monthDays(int month, int year)

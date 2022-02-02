@@ -34,7 +34,7 @@ public class Dates
         @Override
         public String toString()
         {
-            return String.format("%s --> %s: %d day%s", start.format(DateTimeFormatter.ofPattern("EEEE yyyy-MM-dd", Locale.ENGLISH)), end.format(DateTimeFormatter.ofPattern("EEEE yyyy-MM-dd", Locale.ENGLISH)), diff, diff == 1 ? "" : "s");
+            return String.format("%s --> %s: %d day%s", start.format(DateTimeFormatter.ofPattern("EEEE dd.MM.yyyy", Locale.ENGLISH)), end.format(DateTimeFormatter.ofPattern("EEEE dd.MM.yyyy", Locale.ENGLISH)), diff, diff == 1 ? "" : "s");
         }
 
         public String getStart()

@@ -95,7 +95,7 @@ public class Dates
             }
             catch (DateTimeException e)
             {
-                System.out.format("The date %s is illegal!%n", dateStr);
+                System.out.format("The date \"%s\" is illegal!%n", dateStr);
             }
         }
 

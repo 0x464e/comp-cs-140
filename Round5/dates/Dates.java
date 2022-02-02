@@ -1,8 +1,10 @@
 import java.time.DateTimeException;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -18,31 +20,31 @@ public class Dates
 
     public static class DateDiff
     {
-        private final String start;
-        private final String end;
+        private final LocalDate start;
+        private final LocalDate end;
         private final long diff;
 
         private DateDiff(LocalDate startDate, LocalDate endDate)
         {
-            this.start = startDate.toString();
-            this.end = endDate.toString();
+            this.start = startDate;
+            this.end = endDate;
             this.diff = startDate.until(endDate, ChronoUnit.DAYS);
         }
 
         @Override
         public String toString()
         {
-            return String.format("%s --> %s: %d day%s", start, end, diff, diff == 1 ? "" : "s");
+            return String.format("%s --> %s: %d day%s", start.format(DateTimeFormatter.ofPattern("EEEE yyyy-MM-dd", Locale.ENGLISH)), end.format(DateTimeFormatter.ofPattern("EEEE yyyy-MM-dd", Locale.ENGLISH)), diff, diff == 1 ? "" : "s");
         }
 
         public String getStart()
         {
-            return start;
+            return start.toString();
         }
 
         public String getEnd()
         {
-            return end;
+            return end.toString();
         }
 
         public long getDiff()
@@ -79,7 +81,7 @@ public class Dates
 
             if (!found)
             {
-                System.out.format("The date %s is illegal!%n", dateStr);
+                System.out.format("The date \"%s\" is illegal!%n", dateStr);
                 continue;
             }
 

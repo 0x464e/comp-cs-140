@@ -98,7 +98,10 @@ public class WordGame
         }
 
         if (!found && ++gameState.mistakes > gameState.mistakeLimit)
+        {
+            gameState.word = new ArrayList<>(Arrays.stream(word.split("")).toList());
             gameActive = false;
+        }
 
         return gameState;
     }
@@ -115,7 +118,10 @@ public class WordGame
             gameActive = false;
         }
         else if (++gameState.mistakes > gameState.mistakeLimit)
+        {
+            gameState.word = new ArrayList<>(Arrays.stream(word.split("")).toList());
             gameActive = false;
+        }
 
         return gameState;
     }

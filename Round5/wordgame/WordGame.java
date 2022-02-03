@@ -54,26 +54,26 @@ public class WordGame
         words = new ArrayList<>(Files.readAllLines(Path.of(wordFilename)));
     }
 
-    void initGame(int wordIndex, int mistakeLimit)
+    public void initGame(int wordIndex, int mistakeLimit)
     {
         this.word = words.get(wordIndex % words.size());
         gameState = new WordGameState(word, mistakeLimit);
         gameActive = true;
     }
 
-    boolean isGameActive()
+    public boolean isGameActive()
     {
         return gameActive;
     }
 
-    WordGameState getGameState() throws GameStateException
+    public WordGameState getGameState() throws GameStateException
     {
         if (!gameActive)
             throw new GameStateException();
         return gameState;
     }
 
-    WordGameState guess(char guessChar) throws GameStateException
+    public WordGameState guess(char guessChar) throws GameStateException
     {
         if (!gameActive)
             throw new GameStateException();
@@ -103,7 +103,7 @@ public class WordGame
         return gameState;
     }
 
-    WordGameState guess(String guessWord) throws GameStateException
+    public WordGameState guess(String guessWord) throws GameStateException
     {
         if (!gameActive)
             throw new GameStateException();

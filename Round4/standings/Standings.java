@@ -95,8 +95,8 @@ public class Standings
 
         var nameWidth = sortedTeams.stream().max(Comparator.comparingInt(x -> x.name.length())).get().name.length();
         for (var team : sortedTeams)
-            System.out.format("%1$-" + nameWidth + "s %2$3d %3$3d %4$3d %5$3d %6$6s %7$3d%n", team.name, team.playedGames, team.wins, team.ties,
-                              team.losses, String.format("%d-%d", team.scored, team.allowed), team.points);
+            System.out.format("%-" + nameWidth + "s %3d %3d %3d %3d %6s %3d%n", team.name, team.playedGames, team.wins,
+                              team.ties, team.losses, String.format("%d-%d", team.scored, team.allowed), team.points);
     }
 
     public void addMatchResult(String teamNameA, int goalsA, int goalsB, String teamNameB)

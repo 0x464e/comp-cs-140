@@ -29,7 +29,7 @@ public class ValueNode<T> extends Node
 
     double getNumber()
     {
-        return (double) value;
+        return (int) value;
     }
 
     boolean getBoolean()

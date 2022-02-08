@@ -3,7 +3,7 @@ public record Circle(double radius) implements IShapeMetrics
     @Override
     public String toString()
     {
-        return String.format("Circle radius: %.2f", radius);
+        return String.format("Circle with radius: %.2f", radius);
     }
 
     @Override

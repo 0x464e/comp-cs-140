@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class InterfaceTest {
-  public static void main(String args[]) {
+  public static void main(String[] args) {
     ArrayList<IShapeMetrics> shapes = new ArrayList<>();
     for(String arg : args) {
       String[] splitted = arg.split(" ");

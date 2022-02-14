@@ -1,37 +1,33 @@
+import java.io.IOException;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+public class MovieTest {
+  public static void main(String[] args)
+          throws IOException {
+    final Consumer<Movie> showInfo = MovieAnalytics.showInfo();
+    Stream<Movie> movies;
 
+    MovieAnalytics ma = new MovieAnalytics();
+    ma.populateWithData(args[0]);
 
+    System.out.println("Movies after 2020:");
+    movies = ma.moviesAfter(2020);
+    movies.forEach(showInfo);
 
-import java.util.ArrayList;
-import java.util.stream.Collectors;
-import java.util.stream.*;
+    System.out.println();
+    System.out.println("Movies before 1930:");
+    movies = ma.moviesBefore(1930);
+    movies.forEach(showInfo);
 
-public class MovieTest{
+    System.out.println();
+    System.out.println("Movies between 1971-1972:");
+    movies = ma.moviesBetween(1971, 1972);
+    movies.forEach(showInfo);
 
-
-    public static void main(String[] args){
-
-        
-        MovieAnalytics  ma = new MovieAnalytics();
-
-        ma.populateWithData(args[0]);
-
-
-        // Movies after 2020
-        System.out.println("\nMovies after 2020:\n");
-        ma.moviesAfter(2020).forEach(ma.showInfo());
-
-        // Movies before 1930
-        System.out.println("\nMovies before 1930:\n");
-        ma.moviesBefore(1930).forEach(ma.showInfo());
-
-        // Between 1971 and 1972
-        System.out.println("\nMovies between 1971-1972:\n");
-        ma.moviesBetween(1971,1972).forEach(ma.showInfo());
-
-        // Movies by M.S
-        System.out.println("\nMovies by Martin Scorsese:\n");
-        ma.moviesByDirector("Martin Scorsese").forEach(ma.showInfo());
-
-    }
+    System.out.println();
+    System.out.println("Movies by Martin Scorsese:");
+    movies = ma.moviesByDirector("Martin Scorsese");
+    movies.forEach(showInfo);
+  }
 
 }

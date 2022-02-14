@@ -110,7 +110,8 @@ public class JsonTest {
             "Robin Söderling", Map.of());
 
     ArrayNode rootArr = new ArrayNode();
-    for(String player : winStatistics.keySet()) {
+    for(String player : List.of("Rafael Nadal", "Robin Söderling",
+            "Roger Federer")) {
       ObjectNode playerObj = new ObjectNode();
       rootArr.add(playerObj);
       playerObj.set("name", new ValueNode(player));

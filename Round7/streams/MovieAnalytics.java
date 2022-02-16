@@ -14,7 +14,7 @@ public class MovieAnalytics
 
     public static Consumer<Movie> showInfo()
     {
-        return x -> System.out.format("%s (%s, %s)%n", x.getTitle(), x.getDirector(), x.getReleaseYear());
+        return x -> System.out.format("%s (By %s, %s)%n", x.getTitle(), x.getDirector(), x.getReleaseYear());
     }
 
     public void populateWithData(String fileName) throws IOException
@@ -39,7 +39,7 @@ public class MovieAnalytics
 
     public Stream<Movie> moviesBefore(int year)
     {
-        return movies.stream().filter(x -> x.getReleaseYear() < year).sorted(Comparator.comparing(Movie::getReleaseYear).thenComparing(Movie::getTitle));
+        return movies.stream().filter(x -> x.getReleaseYear() <= year).sorted(Comparator.comparing(Movie::getReleaseYear).thenComparing(Movie::getTitle));
     }
 
     public Stream<Movie> moviesBetween(int yearA, int yearB)

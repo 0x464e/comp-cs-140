@@ -18,7 +18,7 @@ Film-Noir: 104.00
 Family: 107.50
 Thriller: 108.00
 Comedy: 112.14
-Mystery: 119.08
+Mystery: 118.82
 Drama: 124.50
 Crime: 126.39
 Action: 129.38
@@ -30,8 +30,8 @@ Average score by genre:
 Western: 8.20
 Crime: 8.02
 Fantasy: 8.00
-Mystery: 7.98
 Film-Noir: 7.97
+Mystery: 7.96
 Drama: 7.96
 Action: 7.95
 Adventure: 7.95

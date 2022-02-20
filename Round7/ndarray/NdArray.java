@@ -5,17 +5,22 @@ import java.util.stream.Stream;
 
 public class NdArray<E> extends AbstractCollection<E>
 {
-    private final ArrayList<Integer> dimensionLens;
+    private ArrayList<Integer> dimensionLens;
     private final ArrayList<E> data;
+    private interface Offset { int calculate(int[] indexes); }
+    private final Offset dataOffset = indexes -> IntStream.rangeClosed(1, indexes.length)
+            .reduce(0, (sum, i) ->
+                    sum + IntStream.range(i, indexes.length)
+                            .reduce(1, (product, i2) ->
+                                    product * dimensionLens.get(i2))
+                            * indexes[i - 1]);
 
     public NdArray(Integer firstDimLen, Integer... furtherDimLens)
     {
         dimensionLens = new ArrayList<>(Stream.concat(Stream.of(firstDimLen), Arrays.stream(furtherDimLens)).toList());
-        dimensionLens.forEach(x -> {
-            if (x < 0)
-                throw new NegativeArraySizeException(String.format("Illegal dimension size %d.", x));
+        dimensionLens.stream().filter(x -> x < 0).findFirst().ifPresent(x -> {
+            throw new NegativeArraySizeException(String.format("Illegal dimension size %d.", x));
         });
-
         data = new ArrayList<>(Collections.nCopies(this.size(), null));
     }
 
@@ -32,14 +37,7 @@ public class NdArray<E> extends AbstractCollection<E>
                 throw new IndexOutOfBoundsException(String.format("Illegal index %d for dimension %d of length %d.", x, dimensionIndex.get(), limit));
         });
 
-        var indexes = Arrays.stream(indices).toArray();
-        var offset = IntStream.rangeClosed(1, indexes.length)
-                .reduce(0, (sum, i) ->
-                        sum + IntStream.range(i, indexes.length)
-                                .reduce(1, (product, i2) ->
-                                        product * dimensionLens.get(i2))
-                                * indexes[i - 1]);
-
+        var offset = dataOffset.calculate(Arrays.stream(indices).toArray());
         return data.get(offset);
     }
 
@@ -56,13 +54,7 @@ public class NdArray<E> extends AbstractCollection<E>
                 throw new IndexOutOfBoundsException(String.format("Illegal index %d for dimension %d of length %d.", x, dimensionIndex.get(), limit));
         });
 
-        var indexes = Arrays.stream(indices).toArray();
-        var offset = IntStream.rangeClosed(1, indexes.length)
-                .reduce(0, (sum, i) ->
-                        sum + IntStream.range(i, indexes.length)
-                                .reduce(1, (product, i2) ->
-                                        product * dimensionLens.get(i2))
-                                * indexes[i - 1]);
+        var offset = dataOffset.calculate(Arrays.stream(indices).toArray());
         data.set(offset, item);
     }
 

@@ -214,7 +214,6 @@ Rush;2013;123;Action;8.1;Ron Howard
 Ford v Ferrari;2019;152;Action;8.1;James Mangold
 Spotlight;2015;129;Biography;8.1;Tom McCarthy
 Song of the Sea;2014;93;Animation;8.1;Tomm Moore
-Kahaani;2012;122;Mystery;8.1;Sujoy Ghosh
 Zindagi Na Milegi Dobara;2011;155;Comedy;8.1;Zoya Akhtar
 Prisoners;2013;153;Crime;8.1;Denis Villeneuve
 Mad Max: Fury Road;2015;120;Action;8.1;George Miller

@@ -1,0 +1,50 @@
+Guam
+  Area: 540.0 km2
+  Population: 540
+  GDP: 540.0 (2015 USD)
+
+Guyana
+  Area: 214970.0 km2
+  Population: 214970
+  GDP: 214970.0 (2015 USD)
+
+India
+  Area: 3287259.0 km2
+  Population: 3287259
+  GDP: 3287259.0 (2015 USD)
+
+Jamaica
+  Area: 10990.0 km2
+  Population: 10990
+  GDP: 10990.0 (2015 USD)
+
+Korea, Dem. People's Rep.
+  Area: 120540.0 km2
+  Population: 120540
+  GDP: 120540.0 (2015 USD)
+
+Latvia
+  Area: 64570.0 km2
+  Population: 64570
+  GDP: 64570.0 (2015 USD)
+
+Libya
+  Area: 1759540.0 km2
+  Population: 1759540
+  GDP: 1759540.0 (2015 USD)
+
+Mozambique
+  Area: 799380.0 km2
+  Population: 799380
+  GDP: 799380.0 (2015 USD)
+
+Puerto Rico
+  Area: 8870.0 km2
+  Population: 8870
+  GDP: 8870.0 (2015 USD)
+
+Saudi Arabia
+  Area: 2149690.0 km2
+  Population: 2149690
+  GDP: 2149690.0 (2015 USD)
+

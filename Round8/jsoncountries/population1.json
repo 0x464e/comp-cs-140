@@ -33,32 +33,6 @@
 			{
 				"field": [
 				{
-					"value": "Korea, Dem. People's Rep.",
-					"attributes":
-					{
-						"name": "Country or Area",
-						"key": "PRK"
-					}
-				},
-				{
-					"value": "Population, total",
-					"attributes":
-					{
-						"name": "Item",
-						"key": "SP.POP.TOTL"
-					}
-				},
-				{
-					"value": "25778815",
-					"attributes":
-					{
-						"name": "Value"
-					}
-				}]
-			},
-			{
-				"field": [
-				{
 					"value": "Latvia",
 					"attributes":
 					{

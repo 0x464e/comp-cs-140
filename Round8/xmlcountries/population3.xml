@@ -12,11 +12,6 @@
       <field name="Value">32365998</field>
     </record>
     <record>
-      <field name="Country or Area" key="NAC">North America</field>
-      <field name="Item" key="SP.POP.TOTL">Population, total</field>
-      <field name="Value">367553264</field>
-    </record>
-    <record>
       <field name="Country or Area" key="GRD">Grenada</field>
       <field name="Item" key="SP.POP.TOTL">Population, total</field>
       <field name="Value">112519</field>

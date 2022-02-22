@@ -3,61 +3,55 @@
   <country>
     <name>Guam</name>
     <area>540.0</area>
-    <population>540</population>
-    <gdp>540.0</gdp>
+    <population>168783</population>
+    <gdp>5259729936.3</gdp>
   </country>
   <country>
     <name>Guyana</name>
     <area>214970.0</area>
-    <population>214970</population>
-    <gdp>214970.0</gdp>
+    <population>786559</population>
+    <gdp>7275908034.1</gdp>
   </country>
   <country>
     <name>India</name>
     <area>3287259.0</area>
-    <population>3287259</population>
-    <gdp>3287259.0</gdp>
+    <population>1380004385</population>
+    <gdp>2500132192252.1</gdp>
   </country>
   <country>
     <name>Jamaica</name>
     <area>10990.0</area>
-    <population>10990</population>
-    <gdp>10990.0</gdp>
-  </country>
-  <country>
-    <name>Korea, Dem. People's Rep.</name>
-    <area>120540.0</area>
-    <population>120540</population>
-    <gdp>120540.0</gdp>
+    <population>2961161</population>
+    <gdp>13440715454.5</gdp>
   </country>
   <country>
     <name>Latvia</name>
     <area>64570.0</area>
-    <population>64570</population>
-    <gdp>64570.0</gdp>
+    <population>1901548</population>
+    <gdp>29604557971.0</gdp>
   </country>
   <country>
     <name>Libya</name>
     <area>1759540.0</area>
-    <population>1759540</population>
-    <gdp>1759540.0</gdp>
+    <population>6871287</population>
+    <gdp>27805590095.5</gdp>
   </country>
   <country>
     <name>Mozambique</name>
     <area>799380.0</area>
-    <population>799380</population>
-    <gdp>799380.0</gdp>
+    <population>31255435</population>
+    <gdp>17959222232.3</gdp>
   </country>
   <country>
     <name>Puerto Rico</name>
     <area>8870.0</area>
-    <population>8870</population>
-    <gdp>8870.0</gdp>
+    <population>3194034</population>
+    <gdp>92660076632.5</gdp>
   </country>
   <country>
     <name>Saudi Arabia</name>
     <area>2149690.0</area>
-    <population>2149690</population>
-    <gdp>2149690.0</gdp>
+    <population>34813867</population>
+    <gdp>650714601909.9</gdp>
   </country>
 </countries>

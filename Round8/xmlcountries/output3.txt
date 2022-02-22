@@ -1,195 +1,195 @@
 Andorra
   Area: 470.0 km2
-  Population: 470
-  GDP: 470.0 (2015 USD)
+  Population: 77265
+  GDP: 2649303923.7 (2015 USD)
 
 Armenia
   Area: 29740.0 km2
-  Population: 29740
-  GDP: 29740.0 (2015 USD)
+  Population: 2963234
+  GDP: 11915301005.3 (2015 USD)
 
 Austria
   Area: 83879.0 km2
-  Population: 83879
-  GDP: 83879.0 (2015 USD)
+  Population: 8917205
+  GDP: 386358828360.0 (2015 USD)
 
 Azerbaijan
   Area: 86600.0 km2
-  Population: 86600
-  GDP: 86600.0 (2015 USD)
+  Population: 10093121
+  GDP: 51307185972.7 (2015 USD)
 
 Bahrain
   Area: 780.0 km2
-  Population: 780
-  GDP: 780.0 (2015 USD)
+  Population: 1701583
+  GDP: 33206179338.1 (2015 USD)
 
 Bangladesh
   Area: 147570.0 km2
-  Population: 147570
-  GDP: 147570.0 (2015 USD)
+  Population: 164689383
+  GDP: 270695543283.1 (2015 USD)
 
 Bolivia
   Area: 1098580.0 km2
-  Population: 1098580
-  GDP: 1098580.0 (2015 USD)
+  Population: 11673029
+  GDP: 34820961246.6 (2015 USD)
 
 Botswana
   Area: 581730.0 km2
-  Population: 581730
-  GDP: 581730.0 (2015 USD)
+  Population: 2351625
+  GDP: 14813376718.9 (2015 USD)
 
 Cambodia
   Area: 181040.0 km2
-  Population: 181040
-  GDP: 181040.0 (2015 USD)
+  Population: 16718971
+  GDP: 23012192756.0 (2015 USD)
 
 Canada
   Area: 9879750.0 km2
-  Population: 9879750
-  GDP: 9879750.0 (2015 USD)
+  Population: 38005238
+  GDP: 1607402450990.1 (2015 USD)
 
 Denmark
   Area: 42920.0 km2
-  Population: 42920
-  GDP: 42920.0 (2015 USD)
+  Population: 5831404
+  GDP: 327737534762.4 (2015 USD)
 
 Equatorial Guinea
   Area: 28050.0 km2
-  Population: 28050
-  GDP: 28050.0 (2015 USD)
+  Population: 1402985
+  GDP: 9509201933.4 (2015 USD)
 
 Faroe Islands
   Area: 1396.0 km2
-  Population: 1396
-  GDP: 1396.0 (2015 USD)
+  Population: 48865
+  GDP: 2518096285.6 (2015 USD)
 
 Finland
   Area: 338450.0 km2
-  Population: 338450
-  GDP: 338450.0 (2015 USD)
+  Population: 5530719
+  GDP: 247507105784.0 (2015 USD)
 
 Germany
   Area: 357580.0 km2
-  Population: 357580
-  GDP: 357580.0 (2015 USD)
+  Population: 83240525
+  GDP: 3434435991589.5 (2015 USD)
 
 Grenada
   Area: 340.0 km2
-  Population: 340
-  GDP: 340.0 (2015 USD)
+  Population: 112519
+  GDP: 979357778.2 (2015 USD)
 
 Guam
   Area: 540.0 km2
-  Population: 540
-  GDP: 540.0 (2015 USD)
+  Population: 168783
+  GDP: 5259729936.3 (2015 USD)
 
 Guinea
   Area: 245860.0 km2
-  Population: 245860
-  GDP: 245860.0 (2015 USD)
+  Population: 13132792
+  GDP: 12922776921.4 (2015 USD)
 
 Guinea-Bissau
   Area: 36130.0 km2
-  Population: 36130
-  GDP: 36130.0 (2015 USD)
+  Population: 1967998
+  GDP: 1218759824.0 (2015 USD)
 
 Guyana
   Area: 214970.0 km2
-  Population: 214970
-  GDP: 214970.0 (2015 USD)
+  Population: 786559
+  GDP: 7275908034.1 (2015 USD)
 
 India
   Area: 3287259.0 km2
-  Population: 3287259
-  GDP: 3287259.0 (2015 USD)
+  Population: 1380004385
+  GDP: 2500132192252.1 (2015 USD)
 
 Iran, Islamic Rep.
   Area: 1745150.0 km2
-  Population: 1745150
-  GDP: 1745150.0 (2015 USD)
+  Population: 83992953
+  GDP: 410188057889.5 (2015 USD)
 
 Ireland
   Area: 70280.0 km2
-  Population: 70280
-  GDP: 70280.0 (2015 USD)
+  Population: 4994724
+  GDP: 392377013983.2 (2015 USD)
 
 Italy
   Area: 302070.0 km2
-  Population: 302070
-  GDP: 302070.0 (2015 USD)
+  Population: 59554023
+  GDP: 1744731951797.4 (2015 USD)
 
 Lao PDR
   Area: 236800.0 km2
-  Population: 236800
-  GDP: 236800.0 (2015 USD)
+  Population: 7275556
+  GDP: 18584865505.7 (2015 USD)
 
 Latvia
   Area: 64570.0 km2
-  Population: 64570
-  GDP: 64570.0 (2015 USD)
+  Population: 1901548
+  GDP: 29604557971.0 (2015 USD)
 
 Luxembourg
   Area: 2590.0 km2
-  Population: 2590
-  GDP: 2590.0 (2015 USD)
+  Population: 632275
+  GDP: 66091291203.4 (2015 USD)
 
 Malaysia
   Area: 330345.0 km2
-  Population: 330345
-  GDP: 330345.0 (2015 USD)
+  Population: 32365998
+  GDP: 344099347074.6 (2015 USD)
 
 Montenegro
   Area: 13810.0 km2
-  Population: 13810
-  GDP: 13810.0 (2015 USD)
+  Population: 621306
+  GDP: 4046328370.5 (2015 USD)
 
 Peru
   Area: 1285220.0 km2
-  Population: 1285220
-  GDP: 1285220.0 (2015 USD)
+  Population: 32971846
+  GDP: 190979128768.5 (2015 USD)
 
 Philippines
   Area: 300000.0 km2
-  Population: 300000
-  GDP: 300000.0 (2015 USD)
+  Population: 109581085
+  GDP: 358294070261.0 (2015 USD)
 
 Russian Federation
   Area: 17098250.0 km2
-  Population: 17098250
-  GDP: 17098250.0 (2015 USD)
+  Population: 144104080
+  GDP: 1416124431328.3 (2015 USD)
 
 Samoa
   Area: 2840.0 km2
-  Population: 2840
-  GDP: 2840.0 (2015 USD)
+  Population: 198410
+  GDP: 864485987.5 (2015 USD)
 
 Saudi Arabia
   Area: 2149690.0 km2
-  Population: 2149690
-  GDP: 2149690.0 (2015 USD)
+  Population: 34813867
+  GDP: 650714601909.9 (2015 USD)
 
 Slovenia
   Area: 20480.0 km2
-  Population: 20480
-  GDP: 20480.0 (2015 USD)
+  Population: 2100126
+  GDP: 48124693310.9 (2015 USD)
 
 South Africa
   Area: 1219090.0 km2
-  Population: 1219090
-  GDP: 1219090.0 (2015 USD)
+  Population: 59308690
+  GDP: 335640150576.1 (2015 USD)
 
 Syrian Arab Republic
   Area: 185180.0 km2
-  Population: 185180
-  GDP: 185180.0 (2015 USD)
+  Population: 17500657
+  GDP: 16265870694.9 (2015 USD)
 
 Thailand
   Area: 513120.0 km2
-  Population: 513120
-  GDP: 513120.0 (2015 USD)
+  Population: 69799978
+  GDP: 432649179610.3 (2015 USD)
 
 Tonga
   Area: 750.0 km2
-  Population: 750
-  GDP: 750.0 (2015 USD)
+  Population: 105697
+  GDP: 489364573.4 (2015 USD)
 

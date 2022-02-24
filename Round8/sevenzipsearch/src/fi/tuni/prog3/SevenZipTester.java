@@ -1,3 +1,5 @@
+package fi.tuni.prog3;
+
 import org.apache.commons.compress.archivers.sevenz.SevenZFile;
 
 import java.io.*;

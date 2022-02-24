@@ -36,7 +36,7 @@
                 <executions>
                     <execution>
                         <configuration>
-                            <mainClass>fi.tuni.prog3.sevenzipsearch.SevenZipTester</mainClass>
+                            <mainClass>fi.tuni.prog3.SevenZipTester</mainClass>
                             <onejarVersion>0.97</onejarVersion>
                             <attachToBuild>true</attachToBuild>
                         </configuration>

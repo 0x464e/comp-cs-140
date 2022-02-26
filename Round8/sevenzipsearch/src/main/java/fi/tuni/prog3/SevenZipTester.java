@@ -19,7 +19,7 @@ public class SevenZipTester
             for (var entry : entries)
             {
                 var name = entry.getName();
-                if (!name.matches(".+?\\.txt$"))
+                if (!name.endsWith(".txt"))
                     continue;
 
                 System.out.format("%s%n", name);

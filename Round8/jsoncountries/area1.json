@@ -33,32 +33,6 @@
 			{
 				"field": [
 				{
-					"value": "Korea, Dem. People's Rep.",
-					"attributes":
-					{
-						"name": "Country or Area",
-						"key": "PRK"
-					}
-				},
-				{
-					"value": "Surface area (sq. km)",
-					"attributes":
-					{
-						"name": "Item",
-						"key": "AG.SRF.TOTL.K2"
-					}
-				},
-				{
-					"value": "120540",
-					"attributes":
-					{
-						"name": "Value"
-					}
-				}]
-			},
-			{
-				"field": [
-				{
 					"value": "Latvia",
 					"attributes":
 					{

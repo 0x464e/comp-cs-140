@@ -7,11 +7,6 @@
       <field name="Value">34813867</field>
     </record>
     <record>
-      <field name="Country or Area" key="PRK">Korea, Dem. People's Rep.</field>
-      <field name="Item" key="SP.POP.TOTL">Population, total</field>
-      <field name="Value">25778815</field>
-    </record>
-    <record>
       <field name="Country or Area" key="LVA">Latvia</field>
       <field name="Item" key="SP.POP.TOTL">Population, total</field>
       <field name="Value">1901548</field>

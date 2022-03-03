@@ -59,32 +59,6 @@
 			{
 				"field": [
 				{
-					"value": "North America",
-					"attributes":
-					{
-						"name": "Country or Area",
-						"key": "NAC"
-					}
-				},
-				{
-					"value": "Population, total",
-					"attributes":
-					{
-						"name": "Item",
-						"key": "SP.POP.TOTL"
-					}
-				},
-				{
-					"value": "367553264",
-					"attributes":
-					{
-						"name": "Value"
-					}
-				}]
-			},
-			{
-				"field": [
-				{
 					"value": "Grenada",
 					"attributes":
 					{

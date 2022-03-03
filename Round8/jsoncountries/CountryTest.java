@@ -10,7 +10,7 @@ public class CountryTest {
     String populationFile = args[1];
     String gdpFile = args[2];
     String countryFile = args[3];
-    List<Country> countries = CountryData.readCountriesFromJsons(areaFile, populationFile, gdpFile);
+    List<Country> countries = CountryData.readFromJsons(areaFile, populationFile, gdpFile);
     Collections.sort(countries);
     for(Country country : countries) {
       System.out.println(country);

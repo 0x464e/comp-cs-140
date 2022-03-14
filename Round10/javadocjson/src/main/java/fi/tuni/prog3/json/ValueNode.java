@@ -81,7 +81,7 @@ public final class ValueNode extends Node
      * @return the stored number as a double value.
      * @throws IllegalStateException if the stored value is not a number.
      */
-    public double getNumber() throws IllegalStateException
+    public double getNumber()
     {
         return 0;
     }
@@ -92,7 +92,7 @@ public final class ValueNode extends Node
      * @return the stored boolean value.
      * @throws IllegalStateException if the stored value is not a boolean value.
      */
-    public boolean getBoolean() throws IllegalStateException
+    public boolean getBoolean()
     {
         return true;
     }
@@ -103,7 +103,7 @@ public final class ValueNode extends Node
      * @return the stored string.
      * @throws IllegalStateException if the stored value is not a string.
      */
-    public String getString() throws IllegalStateException
+    public String getString()
     {
         return "";
     }
@@ -114,7 +114,7 @@ public final class ValueNode extends Node
      * @return null.
      * @throws IllegalStateException if the stored value is not null.
      */
-    public Object getNull() throws IllegalStateException
+    public Object getNull()
     {
         return null;
     }

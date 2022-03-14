@@ -7,24 +7,24 @@ import java.util.Iterator;
 /**
  * A class for representing a JSON array.
  */
-public class ArrayNode extends Node implements Iterable<Node>
+public final class ArrayNode extends Node implements Iterable<Node>
 {
     private final ArrayList<Node> nodes = new ArrayList<>();
 
     /**
      * Constructs an initially empty JSON array node.
      */
-    public ArrayNode() { }
+    public ArrayNode() {}
 
     /**
-     * Returns a fi.tuni.prog3.json.Node iterator that iterates the JSON nodes stored in this JSON array.
-     * @return a fi.tuni.prog3.json.Node iterator that iterates the JSON nodes stored in this JSON array.
+     * Returns the number of JSON nodes stored in this JSON array.
+     * @return the number of JSON nodes in this JSON array.
      */
-    @Override
-    public Iterator<Node> iterator()
+    int size()
     {
-        return nodes.iterator();
+        return nodes.size();
     }
+
 
     /**
      * Adds a new JSON node to the end of this JSON array.
@@ -36,11 +36,14 @@ public class ArrayNode extends Node implements Iterable<Node>
     }
 
     /**
-     * Returns the number of JSON nodes stored in this JSON array.
-     * @return the number of JSON nodes in this JSON array.
+     * Returns a Node iterator that iterates the JSON nodes stored in this JSON array.
+     * @return a Node iterator that iterates the JSON nodes stored in this JSON array.
      */
-    int size()
+    @Override
+    public Iterator<Node> iterator()
     {
-        return nodes.size();
+        return nodes.iterator();
     }
+
+
 }

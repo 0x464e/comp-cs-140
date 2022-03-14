@@ -42,7 +42,7 @@ public class Standings
          * Constructs a Team object for storing statistics of the named team.
          * @param name the name of the team whose statistics the new team object stores.
          */
-        Team(String name)
+        public Team(String name)
         {
             this.name = name;
         }

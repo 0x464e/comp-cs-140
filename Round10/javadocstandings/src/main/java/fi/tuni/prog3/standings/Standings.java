@@ -24,6 +24,8 @@ public class Standings
 
     /**
      * A class for storing statistics of a single team.
+     * The class offers only public getter functions.
+     * The enclosing class Standings is responsible for setting and updating team statistics.
      */
     public static class Team
     {

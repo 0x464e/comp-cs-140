@@ -33,16 +33,6 @@ public abstract class Node {
    */
   protected Node() { }
 
-  public void printSimple() {
-    StringBuilder sb = new StringBuilder();
-    printSimple(this, sb);
-    System.out.print(sb.toString());
-  }
-
-  public void printJson() {
-    throw new UnsupportedOperationException("printJson has not been implemented!");
-  }
-
   private static final String NL = System.lineSeparator();
 
   private static String numberToString(Double d) {

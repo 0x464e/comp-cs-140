@@ -136,7 +136,7 @@ public class Standings
      * @param fileName the name of the game data file to read.
      * @throws IOException if there is some kind of an IO error (e.g. if the specified file does not exist).
      */
-    public void readMatchData(String fileName) throws IOException
+    public final void readMatchData(String fileName) throws IOException
     {
         try (var file = new BufferedReader(new FileReader(fileName)))
         {

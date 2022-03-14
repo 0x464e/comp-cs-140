@@ -9,6 +9,15 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.regex.Pattern;
 
+/**
+ * A class for maintaining team statistics and standings. Team standings are determined by the following rules:
+ * <ul>
+ * <li>Primary rule: points total. Higher points come first.</li>
+ * <li>Secondary rule: goal difference (scored minus allowed). Higher difference comes first.</li>
+ * <li>Tertiary rule: number of goals scored. Higher number comes first.</li>
+ * <li>Last rule: natural String order of team names.</li>
+ * </ul>
+ */
 public class Standings
 {
     private final ArrayList<Team> teams = new ArrayList<>();

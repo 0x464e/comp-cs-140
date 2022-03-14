@@ -5,11 +5,11 @@ package fi.tuni.prog3.json;
  */
 public abstract class Node {
   /**
-   * Checks whether this node represents a JSON value.
-   * @return true if this node represents a JSON value, otherwise false.
+   * Checks whether this node represents a JSON object.
+   * @return true if this node represents a JSON object, otherwise false.
    */
-  public boolean isValue() {
-    return this instanceof ValueNode;
+  public boolean isObject() {
+    return this instanceof ObjectNode;
   }
 
   /**
@@ -19,15 +19,13 @@ public abstract class Node {
   public boolean isArray() {
     return this instanceof ArrayNode;
   }
-
   /**
-   * Checks whether this node represents a JSON object.
-   * @return true if this node represents a JSON object, otherwise false.
+   * Checks whether this node represents a JSON value.
+   * @return true if this node represents a JSON value, otherwise false.
    */
-  public boolean isObject() {
-    return this instanceof ObjectNode;
+  public boolean isValue() {
+    return this instanceof ValueNode;
   }
-
   /**
    * The only constructor. Will be invoked, usually implicitly, by subclass constructors.
    */

@@ -49,7 +49,14 @@ public class ValueNode extends Node
     {
         return true;
     }
-
+    /**
+     * Checks whether this value node stores a string.
+     * @return true if this node stores a string, otherwise false.
+     */
+    public boolean isString()
+    {
+        return true;
+    }
     /**
      * Checks whether this value node stores null.
      * @return true if this node stores null, otherwise false.
@@ -99,12 +106,5 @@ public class ValueNode extends Node
         return null;
     }
 
-    /**
-     * Checks whether this value node stores a string.
-     * @return true if this node stores a string, otherwise false.
-     */
-    public boolean isString()
-    {
-        return true;
-    }
+
 }

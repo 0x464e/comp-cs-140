@@ -6,7 +6,7 @@ import java.util.TreeMap;
 /**
  * A class for representing a JSON object.
  */
-public class ObjectNode extends Node implements Iterable<String>
+public final class ObjectNode extends Node implements Iterable<String>
 {
     private final TreeMap<String, Node> nodes = new TreeMap<>();
 

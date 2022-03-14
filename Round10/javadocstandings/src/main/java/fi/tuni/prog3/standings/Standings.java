@@ -119,7 +119,7 @@ public class Standings
 
     /**
      * Constructs a Standings object that is initialized with the game data read from the specified file.
-     * The result is identical to first constructing an empty Standing object and then calling {@link #readMatchData(String fileName)}.
+     * The result is identical to first constructing an empty Standing object and then calling {@link #readMatchData(String fileName) readMatchData(filename)}.
      * @param fileName the name of the game data file to read.
      * @throws IOException if there is some kind of an IO error (e.g. if the specified file does not exist).
      */

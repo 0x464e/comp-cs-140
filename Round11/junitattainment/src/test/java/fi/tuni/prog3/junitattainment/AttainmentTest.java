@@ -46,7 +46,7 @@ class AttainmentTest
     void testCompareTo()
     {
         var attainment1 = new Attainment("a", "b", 4);
-        var attainment2 = new Attainment("b", "c", 4);
+        var attainment2 = new Attainment("b", "b", 4);
 
         var cmp = attainment1.compareTo(attainment2);
         assertTrue(cmp < 0);

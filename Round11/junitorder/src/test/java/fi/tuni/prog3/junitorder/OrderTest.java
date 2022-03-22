@@ -58,11 +58,17 @@ class OrderTest
 
         var item1 = new Order.Item("item1", 5);
         var item2 = new Order.Item("item2", 5);
+        var item3 = new Order.Item("item2", 5);
+        var item4 = new Order.Item("item2", 5);
 
         order.addItems(item1, 1);
         order.addItems(item2, 1);
+        order.addItems(item3, 1);
+        order.addItems(item4, 1);
         assertTrue(() -> order.getEntries().get(0).getItemName().equals("item1") &&
-                order.getEntries().get(1).getItemName().equals("item2"));
+                order.getEntries().get(1).getItemName().equals("item2") &&
+                order.getEntries().get(2).getItemName().equals("item3") &&
+                order.getEntries().get(3).getItemName().equals("item4"));
     }
 
     @Test

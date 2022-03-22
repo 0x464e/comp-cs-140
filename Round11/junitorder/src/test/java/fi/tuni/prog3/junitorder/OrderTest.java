@@ -47,7 +47,7 @@ class OrderTest
         assertThrows(IllegalArgumentException.class, () -> order.addItems("item", -5));
         assertEquals(11, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
 
-        assertThrows(IllegalStateException.class, () -> order.addItems("item2", 5));
+        assertThrows(NoSuchElementException.class, () -> order.addItems("item2", 5));
         assertEquals(11, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
     }
 

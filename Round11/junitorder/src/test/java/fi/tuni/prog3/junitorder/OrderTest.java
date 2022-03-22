@@ -118,13 +118,12 @@ class OrderTest
     {
         var order = new Order();
 
-        assertTrue(order.isEmpty());
         assertTrue(order.getEntryCount() == 0 && order.isEmpty());
 
         var item = new Order.Item("item", 5);
         order.addItems(item, 1);
 
-        assertFalse(order.getEntryCount() != 0 && !order.isEmpty());
+        assertTrue(order.getEntryCount() != 0 && !order.isEmpty());
         assertFalse(order.isEmpty());
     }
 

@@ -107,21 +107,20 @@ class OrderTest
         var item1 = new Order.Item("item1", 5);
         var item2 = new Order.Item("item2", 9);
 
-        order.addItems(item1, 2);
-        order.addItems(item2, 1);
+        assertTrue(order.addItems(item1, 2));
+        assertTrue(order.addItems(item2, 3));
 
-        assertEquals(2*5 + 1*9, order.getTotalPrice());
+        assertEquals(2*5 + 3*9, order.getTotalPrice());
     }
 
     @Test
     void isEmpty()
     {
         var order = new Order();
-
         assertTrue(order.isEmpty());
 
         var item = new Order.Item("item", 5);
-        order.addItems(item, 1);
+        assertTrue(order.addItems(item, 1));
 
         assertFalse(order.isEmpty());
     }

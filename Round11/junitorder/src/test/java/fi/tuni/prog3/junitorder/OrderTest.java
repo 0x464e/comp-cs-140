@@ -58,8 +58,8 @@ class OrderTest
 
         var item1 = new Order.Item("item1", 5);
         var item2 = new Order.Item("item2", 5);
-        var item3 = new Order.Item("item2", 5);
-        var item4 = new Order.Item("item2", 5);
+        var item3 = new Order.Item("item3", 5);
+        var item4 = new Order.Item("item4", 5);
 
         order.addItems(item1, 1);
         order.addItems(item2, 1);

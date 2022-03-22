@@ -34,18 +34,21 @@ class OrderTest
     {
         var order = new Order();
 
+        var item = new Order.Item("item", 5);
+        order.addItems(item, 1);
+
         assertTrue(order.addItems("item", 5));
         assertTrue(order.getEntries().stream().anyMatch(x -> x.getItemName().equals("item")));
-        assertEquals(5, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
+        assertEquals(6, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
 
         assertTrue(order.addItems("item", 5));
-        assertEquals(10, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
+        assertEquals(11, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
 
         assertThrows(IllegalArgumentException.class, () -> order.addItems("item", -5));
-        assertEquals(10, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
+        assertEquals(11, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
 
         assertThrows(IllegalStateException.class, () -> order.addItems("item2", 5));
-        assertEquals(10, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
+        assertEquals(11, order.getEntries().stream().filter(x -> x.getItemName().equals("item")).findFirst().get().getCount());
     }
 
     @Test
@@ -59,7 +62,7 @@ class OrderTest
         order.addItems(item1, 1);
         order.addItems(item2, 1);
         assertTrue(() -> order.getEntries().get(0).getItemName().equals("item1") &&
-                order.getEntries().get(0).getItemName().equals("item2"));
+                order.getEntries().get(1).getItemName().equals("item2"));
     }
 
     @Test

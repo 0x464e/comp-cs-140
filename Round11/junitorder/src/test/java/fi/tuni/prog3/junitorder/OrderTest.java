@@ -9,6 +9,38 @@ import static org.junit.jupiter.api.Assertions.*;
 class OrderTest
 {
     @Test
+    void testEntry()
+    {
+        assertThrows(IllegalArgumentException.class, () -> new Order.Entry(null, -5));
+
+        var entry = new Order.Entry(new Order.Item("item", 5), 5);
+        assertEquals(5, entry.getCount());
+
+        var item = new Order.Item("item", 5);
+        assertEquals(5, new Order.Entry(item, 5).getCount());
+
+        assertEquals("item", entry.getItemName());
+
+        assertEquals(5, entry.getUnitPrice());
+
+        assertEquals("5 units of item", entry.toString());
+    }
+
+    @Test
+    void testItem()
+    {
+        assertThrows(IllegalArgumentException.class, () -> new Order.Item(null, -5));
+
+        var item = new Order.Item("item", 5);
+        assertEquals("item", item.getName());
+
+        assertEquals(5, item.getPrice());
+
+        assertEquals("Item(item, 5.00)", item.toString());
+    }
+
+
+    @Test
     void addItems()
     {
         var order = new Order();

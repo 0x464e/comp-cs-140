@@ -23,7 +23,7 @@ class OrderTest
 
         assertEquals(5, entry.getUnitPrice());
 
-        assertEquals("5 units of item", entry.toString());
+        assertEquals("5 units of Item(item, 5.00)", entry.toString());
     }
 
     @Test

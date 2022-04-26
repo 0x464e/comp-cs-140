@@ -1,3 +1,4 @@
-Tämä on henkilökohtainen kurssitietovarastosi harjoitustehtävien tekemistä varten. Liitä https://course-gitlab.tuni.fi/comp.cs.140-ohjelmointi-3_2021-2022/student_template_project paikalliseen tietovarastoosi remoteksi kurssin tarjoamia koodeja hakeaksesi.
-
-This is your personal course repository for implementing exercise tasks. Add https://course-gitlab.tuni.fi/comp.cs.140-ohjelmointi-3_2021-2022/student_template_project as a remote to your local repository to fetch code provided by the course.
+# COMP.CS.140 Programming 3: Interfaces and Techniques
+This repository contains my university's programming 3 course. The course's language is Java.  
+The course is currently on-going, so only some some code is found here.  
+I'll update this repository as the course progresses.
